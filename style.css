@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+/* Login page */
+.head{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    opacity: 80%;
+}
+.head img{
+    width:500px;
+    height:100px;
+    position:relative;
+    left:30%;
+}
+.login{
+    font-family: fantasy;
+    font-size: 18px;
+    background-color: #d6b49c;
+    width: 320px;
+    height:400px;
+    padding: 20px 0;
+    margin: 30px;
+    position: relative;
+    left:33%;
+    box-shadow: 0 0 10px 0px #000;
+    text-align: center;
+}
+
+.login form{
+    max-width: 350px;
+    padding: 0 20px;
+    position: absolute;
+    top :130px;
+    left:40px;
+}
+button{
+    background-color: #a56333;
+    color: #000;
+    border:0;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:'Rockwell';
+}
+button:hover{
+    background-color: #0d0e12;
+    color: #EDDBC7;
+}
+.login input{
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border:2 px solid #a56333;
+}
+/* Admin page */
+table{
+    margin: 20px;
+    background-color:#d6b49c;
+    border-radius: 10px;
+    width: 95%;
+    border-collapse: collapse;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    background: #000;
+    box-shadow: 0px 3px 15px rgb(44, 42, 42);
+    position: sticky;
+    height: 30px;
+}
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d6cfc2;
+    transition: 0.3s ease;
+}
+#nav li a:hover,
+#nav li a.active{
+    color: #a56333;
+}
+#nav li a.active::after,
+#nav li a:hover::after {
+    content: "";
+    width:30%;
+    height: 2px;
+    background: #a56333;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    
+}
+th{
+    padding:10px;
+    background-color: #a56333;
+    position: sticky;
+    text-align: left;
+    border-radius: 5px;
+}
+td{
+    padding: 10px;
+}
+
+/* User page */
+.application h2{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.leaveform{
+    font-size: 18px;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d6b49c;
+    opacity: 80%;
+}
+.leaveform input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #96501e;
+}
+.leaveform input:focus{
+    border-bottom: 2px solid #7B3F00;
+    outline: none;
+}
+.leaveform button{
+    margin-bottom: 20px;
+}
+.application .leaveform select{
+    padding: 10px;
+}
+.search{
+    position: relative;
+    left: 70%;
+    margin-top: 15px;
+}
+.search input{
+    padding:5px;
+}
+.search_name{
+    margin-left: 22px;
+}
